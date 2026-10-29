@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Daily Edit | Frontend Studio</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html"><span class="brand-mark">DE</span> The Daily Edit</a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="../index.html">Home</a><a class="active"
+        href="blog.html">Articles</a><a href="#categories">Categories</a><a href="#about">About</a><a
+        class="btn btn-primary" href="#newsletter">Subscribe ↗</a></nav>
+  </header>
+  <main class="page-wrap">
+    <div class="page-title-row">
+      <div>
+        <p class="eyebrow">NOTES FOR CURIOUS MINDS</p>
+        <h1>Ideas worth sharing.</h1>
+        <p>Fresh perspectives on technology, design, business and the way we work.</p>
+      </div><span class="badge badge-green">New stories every week</span>
+    </div>
+    <section class="blog-feature">
+      <div class="feature-art">
+        <div class="feature-art-inner"><span>THE EDIT · 01</span><strong>Make space<br>for better
+            ideas.</strong><span>DESIGN / THINKING</span></div>
+      </div>
+      <div class="feature-copy"><span class="badge badge-purple">Featured story</span>
+        <h2>Small design decisions that make a big difference</h2>
+        <p>Explore how thoughtful spacing, clear language and a consistent visual system can make digital products
+          easier to use.</p>
+        <div class="article-meta">By Maya Ellis <span>·</span> Oct 28, 2026 <span>·</span> 6 min read</div><a
+          class="btn btn-primary" href="#articles">Read featured story →</a>
+      </div>
+    </section>
+    <div class="breadcrumbs" style="margin-top:25px"><a href="../index.html">Home</a><span>›</span><span
+        class="current">Blog</span></div>
+    <div class="pill-row" id="categories"><span class="pill active">All stories</span><span
+        class="pill">Technology</span><span class="pill">Web Development</span><span class="pill">UI/UX</span><span
+        class="pill">Business</span><span class="pill">Tutorials</span></div>
+    <div class="two-column" id="articles">
+      <section>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">LATEST ARTICLES</p>
+            <h2>Explore the latest</h2>
+          </div>
+          <p>Useful ideas for your next project.</p>
+        </div>
+        <div class="article-grid">
+          <article class="card">
+            <div class="article-art art-tech"></div>
+            <div class="card-body"><span class="badge badge-purple">Technology</span>
+              <h3>What makes a website feel fast?</h3>
+              <p class="muted">Learn the practical details behind a smooth and welcoming web experience.</p>
+              <div class="article-meta">By Noah Reed <span>·</span> Oct 26, 2026</div>
+              <p><a class="btn btn-secondary" href="#read-more">Read More →</a></p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="article-art art-design"></div>
+            <div class="card-body"><span class="badge badge-yellow">UI/UX</span>
+              <h3>A beginner's guide to visual hierarchy</h3>
+              <p class="muted">Help people understand what matters first through scale, contrast and space.</p>
+              <div class="article-meta">By Ava Brooks <span>·</span> Oct 24, 2026</div>
+              <p><a class="btn btn-secondary" href="#read-more">Read More →</a></p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="article-art art-business"></div>
+            <div class="card-body"><span class="badge badge-green">Business</span>
+              <h3>Turning a small idea into a real project</h3>
+              <p class="muted">A simple way to test an idea, learn from feedback and keep improving.</p>
+              <div class="article-meta">By Ethan Cole <span>·</span> Oct 22, 2026</div>
+              <p><a class="btn btn-secondary" href="#read-more">Read More →</a></p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="article-art art-code"></div>
+            <div class="card-body"><span class="badge badge-purple">Web Development</span>
+              <h3>HTML structure that stays readable</h3>
+              <p class="muted">Use meaningful elements to make your pages easier to maintain and understand.</p>
+              <div class="article-meta">By Zara Patel <span>·</span> Oct 20, 2026</div>
+              <p><a class="btn btn-secondary" href="#read-more">Read More →</a></p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="article-art art-work"></div>
+            <div class="card-body"><span class="badge badge-yellow">Tutorials</span>
+              <h3>Five CSS habits worth learning early</h3>
+              <p class="muted">Build a solid foundation with reusable styles, spacing and simple responsive rules.</p>
+              <div class="article-meta">By Liam Carter <span>·</span> Oct 18, 2026</div>
+              <p><a class="btn btn-secondary" href="#read-more">Read More →</a></p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="article-art art-growth"></div>
+            <div class="card-body"><span class="badge badge-green">Business</span>
+              <h3>Making room for focused work</h3>
+              <p class="muted">Small routines can help teams protect attention and make steady progress.</p>
+              <div class="article-meta">By Mia Turner <span>·</span> Oct 16, 2026</div>
+              <p><a class="btn btn-secondary" href="#read-more">Read More →</a></p>
+            </div>
+          </article>
+        </div>
+        <nav class="pagination" aria-label="Article pages"><span class="disabled">← Previous</span><a class="selected"
+            href="#page-1" aria-current="page">1</a><a href="#page-2">2</a><a href="#page-3">3</a><a href="#page-2">Next
+            →</a></nav>
+      </section>
+      <aside class="blog-sidebar">
+        <section class="sidebar-box">
+          <h3>Search articles</h3>
+          <form action="#" method="get"><label class="field-label" for="blog-search">Search by keyword</label><input
+              class="search-input" id="blog-search" name="q" placeholder="Try “CSS layout”"></form>
+        </section>
+        <section class="sidebar-box">
+          <h3>Popular posts</h3><a class="popular-link" href="#popular"><span class="popular-number">01</span><span>How
+              to build a clean portfolio website</span></a><a class="popular-link" href="#popular"><span
+              class="popular-number">02</span><span>CSS Grid or Flexbox: where to start</span></a><a
+            class="popular-link" href="#popular"><span class="popular-number">03</span><span>Designing forms people can
+              use</span></a>
+        </section>
+        <section class="sidebar-box">
+          <h3>Browse categories</h3>
+          <div class="category-list"><span class="pill">Technology</span><span class="pill">Design</span><span
+              class="pill">Business</span><span class="pill">Tutorials</span><span class="pill">UI/UX</span></div>
+        </section>
+        <section class="sidebar-box newsletter" id="newsletter"><span class="badge badge-purple">THE WEEKLY EDIT</span>
+          <h3>Good ideas, delivered.</h3>
+          <p>Get a short collection of useful reads in your inbox.</p>
+          <form action="#" method="get">
+            <div class="form-field"><label for="newsletter-email">Email address</label><input id="newsletter-email"
+                name="email" type="email" placeholder="you@example.com" required></div><button class="btn btn-primary"
+              type="submit">Join the newsletter →</button>
+          </form><small style="display:block;margin-top:12px;color:#aaa9c7">No spam. Unsubscribe anytime.</small>
+        </section>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer" id="about"><span>© 2026 The Daily Edit</span><span><a href="#categories">Categories</a> ·
+      <a href="#newsletter">Newsletter</a> · Contact: hello@example.com</span></footer>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Components | Frontend Studio</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html"><span class="brand-mark">UI</span> Frontend Studio</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="../index.html">Home</a><a href="blog.html">Blog</a><a href="dashboard.html">Dashboard</a><a
+        class="active" href="components.html">UI Components</a>
+    </nav>
+  </header>
+  <main class="page-wrap">
+    <div class="page-title-row">
+      <div>
+        <p class="eyebrow">PART 1 &amp; PART 2</p>
+        <h1>Reusable UI library</h1>
+        <p>Common interface elements, built from HTML and CSS.</p>
+      </div><a class="btn btn-secondary" href="../index.html">← Home</a>
+    </div>
+    <div class="breadcrumbs"><a href="../index.html">Home</a><span>›</span><span class="current">UI Components</span>
+    </div>
+
+    <section class="component-section">
+      <h2>1. Buttons</h2>
+      <div class="demo-surface button-collection">
+        <button class="btn btn-primary">Primary</button><button class="btn btn-secondary">Secondary</button><button
+          class="btn btn-success">Success</button><button class="btn btn-danger">Danger</button><button
+          class="btn btn-warning">Warning</button><button class="btn btn-disabled" disabled>Disabled</button><button
+          class="btn btn-icon" aria-label="Settings">⚙</button>
+      </div>
+    </section>
+    <section class="component-section">
+      <h2>2. Pills, chips and badges</h2>
+      <div class="demo-surface">
+        <div class="pill-row"><span class="pill active">Technology</span><span class="pill">Design</span><span
+            class="pill">Business</span><span class="pill">Featured</span></div>
+        <div class="button-collection"><span class="badge badge-green">Active</span><span
+            class="badge badge-yellow">Pending</span><span class="badge badge-purple">Completed</span><span
+            class="badge badge-red">Cancelled</span></div>
+      </div>
+    </section>
+    <section class="component-section">
+      <h2>3. Breadcrumbs</h2>
+      <div class="demo-surface">
+        <div class="breadcrumbs"><a href="../index.html">Home</a><span>›</span><a
+            href="blog.html">Blog</a><span>›</span><a href="blog.html">Technology</a><span>›</span><span
+            class="current">HTML &amp; CSS</span></div>
+      </div>
+    </section>
+    <section class="component-section">
+      <h2>4. Content card</h2>
+      <div class="project-grid">
+        <article class="card">
+          <div class="article-art art-tech"><span class="badge badge-purple">Technology</span></div>
+          <div class="card-body"><span class="badge badge-purple">Featured</span>
+            <h3>Designing for the modern web</h3>
+            <p class="muted">A practical look at the small details that make a digital experience feel clear and useful.
+            </p>
+            <div class="article-meta">By Alex Morgan <span>·</span> Oct 20, 2026</div>
+            <p><a class="btn btn-secondary" href="blog.html">Read article →</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="component-section">
+      <h2>5. Alerts and notifications</h2>
+      <div class="demo-surface">
+        <div class="alert alert-success"><span>✓</span>
+          <div><strong>Success</strong>Your changes have been saved successfully.</div><span>×</span>
+        </div>
+        <div class="alert alert-info"><span>i</span>
+          <div><strong>Information</strong>A new update is available for your workspace.</div><span>×</span>
+        </div>
+        <div class="alert alert-warning"><span>!</span>
+          <div><strong>Warning</strong>Please review the details before continuing.</div><span>×</span>
+        </div>
+        <div class="alert alert-error"><span>×</span>
+          <div><strong>Error</strong>Something went wrong. Please try again.</div><span>×</span>
+        </div>
+      </div>
+    </section>
+    <section class="component-section">
+      <h2>6. Navigation bar</h2>
+      <div class="demo-surface">
+        <nav class="main-nav"><a class="active" href="../index.html">Home</a><a href="blog.html">Articles</a><a
+            href="dashboard.html">Dashboard</a><a class="btn btn-primary" href="blog.html">Get started →</a></nav>
+      </div>
+    </section>
+    <section class="component-section">
+      <h2>7. Form components</h2>
+      <div class="demo-surface">
+        <form action="#" method="get">
+          <div class="project-grid">
+            <div class="form-field"><label for="full-name">Full name</label><input id="full-name" name="full-name"
+                type="text" placeholder="Enter your name" required></div>
+            <div class="form-field"><label for="email">Email address</label><input id="email" name="email" type="email"
+                placeholder="you@example.com" required></div>
+            <div class="form-field"><label for="password">Password</label><input id="password" name="password"
+                type="password" placeholder="At least 8 characters" minlength="8" required></div>
+            <div class="form-field"><label for="topic">Choose a topic</label><select id="topic" name="topic">
+                <option>Web development</option>
+                <option>Design</option>
+                <option>Business</option>
+              </select></div>
+          </div>
+          <div class="radio-row"><span class="field-label">Account type:</span><label><input type="radio" name="account"
+                value="student" checked> Student</label><label><input type="radio" name="account" value="professional">
+              Professional</label></div>
+          <div class="checkbox-row"><label><input type="checkbox" name="updates"> Send me occasional updates</label>
+          </div>
+          <div class="form-field"><label for="message">Message</label><textarea id="message" name="message" rows="3"
+              placeholder="Write your message here"></textarea></div>
+          <button class="btn btn-primary" type="submit">Submit form →</button>
+        </form>
+      </div>
+    </section>
+    <section class="component-section">
+      <h2>8. Pagination</h2>
+      <nav class="pagination" aria-label="Pagination"><span class="disabled">← Previous</span><a class="selected"
+          href="#page-1" aria-current="page">1</a><a href="#page-2">2</a><a href="#page-3">3</a><a
+          href="#page-4">4</a><a href="#page-2">Next →</a></nav>
+    </section>
+    <section class="component-section">
+      <h2>9. Responsive table</h2>
+      <div class="table-wrap">
+        <table>
+
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+
+
+          <tr>
+            <td>Amara James</td>
+            <td>amara@example.com</td>
+            <td><span class="badge badge-green">Active</span></td>
+            <td><a href="#edit">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Daniel Kim</td>
+            <td>daniel@example.com</td>
+            <td><span class="badge badge-yellow">Pending</span></td>
+            <td><a href="#edit">Edit</a></td>
+          </tr>
+          <tr>
+            <td>Sofia Martin</td>
+            <td>sofia@example.com</td>
+            <td><span class="badge badge-red">Cancelled</span></td>
+            <td><a href="#edit">Edit</a></td>
+          </tr>
+
+        </table>
+      </div>
+    </section>
+    <section class="component-section">
+      <h2>10. Confirmation modal design</h2>
+      <div class="modal-demo">
+        <div class="modal-box">
+          <div class="modal-symbol">!</div>
+          <h3>Delete this item?</h3>
+          <p class="muted">This action cannot be undone. Are you sure you want to continue?</p>
+          <div class="modal-actions"><button class="btn btn-secondary">Cancel</button><button
+              class="btn btn-danger">Confirm</button></div>
+        </div>
+      </div>
+    </section>
+    <section class="component-section">
+      <h2>11. Dashboard sidebar</h2>
+      <div class="dashboard-shell">
+        <aside class="dashboard-sidebar"><a class="brand" href="dashboard.html"><span class="brand-mark">UI</span>
+            Studio Admin</a>
+          <div class="side-label">WORKSPACE</div>
+          <nav class="side-nav"><a class="active" href="dashboard.html"><span class="side-icon">▦</span>Dashboard</a><a
+              href="dashboard.html#users"><span class="side-icon">♙</span>Users</a><a
+              href="dashboard.html#transactions"><span class="side-icon">▤</span>Orders</a><a
+              href="dashboard.html#reports"><span class="side-icon">▥</span>Reports</a><a href="#settings"><span
+                class="side-icon">⚙</span>Settings</a></nav>
+          <div class="profile-bottom"><span class="avatar">AM</span>
+            <div><strong>Alex Morgan</strong><small>Administrator</small></div>
+          </div>
+        </aside>
+        <div class="demo-surface">
+          <h3>Sidebar preview</h3>
+          <p class="muted">The sidebar groups related navigation links and highlights the current page.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© 2026 Frontend Studio</span><span>HTML &amp; CSS component practice</span></footer>
+</body>
+
+</html>

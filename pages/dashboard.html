@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Frontend Studio</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <main class="page-wrap">
+    <div class="page-title-row">
+      <div>
+        <p class="eyebrow">PROJECT 02 · ADMIN INTERFACE</p>
+        <h1>Workspace overview</h1>
+        <p>A simple dashboard interface built with semantic HTML and CSS.</p>
+      </div><a class="btn btn-secondary" href="../index.html">← Home</a>
+    </div>
+    <div class="dashboard-shell">
+      <aside class="dashboard-sidebar">
+        <a class="brand" href="../index.html"><span class="brand-mark">UI</span> Studio Admin</a>
+        <div class="side-label">WORKSPACE</div>
+        <nav class="side-nav" aria-label="Dashboard navigation">
+          <a class="active" href="#overview"><span class="side-icon">▦</span>Dashboard</a>
+          <a href="#users"><span class="side-icon">♙</span>Users</a>
+          <a href="#products"><span class="side-icon">◇</span>Products</a>
+          <a href="#transactions"><span class="side-icon">▤</span>Orders</a>
+          <a href="#reports"><span class="side-icon">▥</span>Reports</a>
+          <a href="#settings"><span class="side-icon">⚙</span>Settings</a>
+          <a href="../index.html"><span class="side-icon">↪</span>Logout</a>
+        </nav>
+        <div class="profile-bottom"><span class="avatar">AM</span>
+          <div><strong>Alex Morgan</strong><small>Administrator</small></div>
+        </div>
+      </aside>
+      <section class="dashboard-main" id="overview">
+        <header class="dashboard-top">
+          <div>
+            <h1>Dashboard</h1>
+            <p>Welcome back, Alex. Here's what's happening today.</p>
+          </div>
+          <div class="dashboard-tools">
+            <form action="#" method="get"><label class="field-label" for="dashboard-search"
+                style="position:absolute;left:-9999px">Search dashboard</label><input class="search-input"
+                id="dashboard-search" name="q" placeholder="Search anything..."></form><span class="icon-square"
+              aria-label="Notifications">♧<i class="notification-dot"></i></span><span class="avatar">AM</span>
+          </div>
+        </header>
+        <div class="stat-grid">
+          <article class="stat-card">
+            <div class="stat-card-top"><span>Total Users</span><span class="stat-icon">♙</span></div>
+            <div class="stat-value">1,248</div>
+            <div class="stat-foot">↗ 12.8% <span>from last month</span></div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-card-top"><span>Revenue</span><span class="stat-icon"
+                style="background:var(--green-soft);color:var(--green)">₣</span></div>
+            <div class="stat-value">18,450,000 <small style="font-size:.65em">RWF</small></div>
+            <div class="stat-foot">↗ 8.2% <span>from last month</span></div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-card-top"><span>Orders</span><span class="stat-icon"
+                style="background:var(--yellow-soft);color:var(--yellow)">▤</span></div>
+            <div class="stat-value">324</div>
+            <div class="stat-foot">↗ 5.4% <span>from last month</span></div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-card-top"><span>Pending Tasks</span><span class="stat-icon"
+                style="background:var(--red-soft);color:var(--red)">◷</span></div>
+            <div class="stat-value">27</div>
+            <div class="stat-foot" style="color:var(--red)">Needs attention</div>
+          </article>
+        </div>
+        <div class="dashboard-content-grid" id="reports">
+          <section class="panel">
+            <div class="panel-heading">
+              <div>
+                <h2>Revenue overview</h2>
+                <p>Performance during the last six months</p>
+              </div>
+              <div class="chart-legend"><span><i class="legend-dot"></i>Revenue</span><span><i
+                    class="legend-dot green"></i>Orders</span></div>
+            </div>
+            <div class="analytics-chart" role="img"
+              aria-label="Illustrative bar chart showing monthly revenue from January to June">
+              <div class="chart-column"><i style="height:38%"></i><i style="height:25%"></i></div>
+              <div class="chart-column"><i style="height:52%"></i><i style="height:37%"></i></div>
+              <div class="chart-column"><i style="height:44%"></i><i style="height:32%"></i></div>
+              <div class="chart-column"><i style="height:68%"></i><i style="height:49%"></i></div>
+              <div class="chart-column"><i style="height:61%"></i><i style="height:45%"></i></div>
+              <div class="chart-column"><i style="height:83%"></i><i style="height:60%"></i></div>
+            </div>
+            <div class="chart-months">
+              <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span></div>
+            <p class="muted" style="font-size:.7rem;margin-bottom:0">Illustrative chart made with CSS. No live analytics
+              are connected.</p>
+          </section>
+          <section class="panel" id="users">
+            <div class="panel-heading">
+              <div>
+                <h2>Recent activity</h2>
+                <p>Latest workspace updates</p>
+              </div><a href="#users" class="badge badge-purple">View all</a>
+            </div>
+            <div class="activity-list">
+              <div class="activity-item"><span class="avatar a1">JM</span>
+                <p><strong>Jordan Miles</strong> joined the workspace.<small>5 minutes ago</small></p>
+              </div>
+              <div class="activity-item"><span class="avatar a2">SK</span>
+                <p><strong>Sam Kim</strong> completed an order.<small>24 minutes ago</small></p>
+              </div>
+              <div class="activity-item"><span class="avatar a3">AR</span>
+                <p><strong>Avery Rose</strong> updated their profile.<small>1 hour ago</small></p>
+              </div>
+              <div class="activity-item"><span class="avatar a4">TC</span>
+                <p><strong>Taylor Chen</strong> created a new report.<small>2 hours ago</small></p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="panel" id="transactions">
+          <div class="table-heading">
+            <h2>Recent transactions</h2><a href="#transactions" class="btn btn-secondary">View all orders →</a>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Customer</th>
+                  <th>Date</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#ORD-1048</td>
+                  <td>Jordan Miles</td>
+                  <td>Oct 29, 2026</td>
+                  <td>125,000 RWF</td>
+                  <td><span class="badge badge-green">Completed</span></td>
+                  <td><a href="#details">View</a></td>
+                </tr>
+                <tr>
+                  <td>#ORD-1047</td>
+                  <td>Sam Kim</td>
+                  <td>Oct 28, 2026</td>
+                  <td>86,500 RWF</td>
+                  <td><span class="badge badge-yellow">Pending</span></td>
+                  <td><a href="#details">View</a></td>
+                </tr>
+                <tr>
+                  <td>#ORD-1046</td>
+                  <td>Avery Rose</td>
+                  <td>Oct 28, 2026</td>
+                  <td>240,000 RWF</td>
+                  <td><span class="badge badge-green">Completed</span></td>
+                  <td><a href="#details">View</a></td>
+                </tr>
+                <tr>
+                  <td>#ORD-1045</td>
+                  <td>Taylor Chen</td>
+                  <td>Oct 27, 2026</td>
+                  <td>52,000 RWF</td>
+                  <td><span class="badge badge-red">Cancelled</span></td>
+                  <td><a href="#details">View</a></td>
+                </tr>
+                <tr>
+                  <td>#ORD-1044</td>
+                  <td>Casey Blake</td>
+                  <td>Oct 26, 2026</td>
+                  <td>97,000 RWF</td>
+                  <td><span class="badge badge-yellow">Pending</span></td>
+                  <td><a href="#details">View</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer"><span>© 2026 Studio Admin</span><span>Dashboard UI demonstration · Sample data</span>
+  </footer>
+</body>
+
+</html>
