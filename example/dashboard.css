@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  color: black;
+}
+
+nav {
+  background: white;
+  padding: 16px 24px;
+  border-bottom: 2px solid black;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin-right: 16px;
+  font-weight: bold;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  background: white;
+  border: 2px solid black;
+  padding: 16px;
+  width: 180px;
+}
+
+.stat strong {
+  display: block;
+  font-size: 28px;
+  margin-top: 8px;
+  color: black;
+}
